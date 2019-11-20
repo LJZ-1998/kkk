@@ -1,58 +1,38 @@
-# 第一个仓库
-1. `git init` 用于初始化仓库
+#markdown 语法
+ ##标题语法：
 
-2. 新建一个readme.md文件
+# 这是一级标题
+## 这是二级标题
+### 这是三级标题
+#### 这是四级标题
+##### 这是五级标题
+###### 这是六级标题
 
-3. `git add 文件名` 添加文件到本地仓库
-```
-git add .   //添加所有文件
-```
+二、字体
+加粗
+要加粗的文字左右分别用两个*号包起来       **勰**
 
-4. 添加用户名和邮箱(第一次的时候需要)
-```
-git config --global user.email '你的邮箱'
-git config --global user.name '你的用户名'
-```
+斜体
+要倾斜的文字左右分别用一个*号包起来         *啧啧啧*
 
-4. 提交
-```
-git commit -m '注释' //注释是对本次提交的说明
-```
+斜体加粗
+要倾斜和加粗的文字左右分别用三个*号包起来      ***晶***
 
-5. 添加远程仓库地址
-```
-git remote add origin git@github.com:lizelong/ceshi.git
-```
-6. 将本地提交的内容推送到远程仓库
-```
-git push 远程仓库的别名 master
-git push abc master
-```
+删除线
 
-6. 没有权限，先生成ssh key
-```
-ssh-keygen -t rsa -C '邮箱'
-
-执行完上一条命令后，会在 ~/.ssh/ 文件夹下面生成公钥文件 id_rsa.pub 
-将公钥文件中的内容，放到GitHub中：
-	右上角头像 -> settings -> SSH and GPG keys -> New SSH key
-	title： 仓库名
-	Key： id_rsa.pub 的内容
-```
+要加删除线的文字左右分别用两个~号包起来      ~~哒哒哒~~
 
 
 
 
-# 工作流程
-1. 初始化本地仓库
-2. 跟远程仓库建立连接
-	git remote add 远程仓库的别名(origin) 远程地址
-	git remote add origin git@github.com:lizelong/ceshi.git
-3. 开发模块
-4. 先添加所有文件
-	git add .
-5. 提交到本地仓库
-	git commit -m '添加index.html'
 
-# github pages
-目的： 为了更方便的查看HTML文件解析后的内容
+
+[简书](http://jianshu.com)
+[http://photocdn.sohu.com/20120323/Img338614056.jpg](http://jianshu.com)
+![zzzz](http://photocdn.sohu.com/20120323/Img338614056.jpg "jjjjjjjj")
+
+
+# 无序列表
+- 列表内容
++ 列表内容
+* 列表内容
